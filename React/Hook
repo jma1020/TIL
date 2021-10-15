@@ -1,0 +1,47 @@
+useEffect 
+useEffect(() => {
+    console.log('use Effect RAN');
+}, [counter])
+
+
+useEffect 두번째 인자 Array 가 업데이트가 되면 첫번째 인자가 실행이
+된다   ==>(component did update)
+
+만약 두번째 인자를 비우면 컴포넌트가 did mount 할때 첫번째 함수를
+불러라~ ==> (component did mount)
+     {맨처음에 컴포넌트가 마운드가 됬을때만 실행이 된다}
+
+
+여기서 useEffect 기능 중 한가지가 더 있는데
+
+useEffect(() => {
+    console.log('use Effect RAN');
+
+    //Unmount
+    return () => {
+        console.log('Unmount')
+    }
+
+}, [] )
+
+리턴에 함수를 집어넣으면 함수안에 들어가는 값이 컴포넌트가 언마운트가
+되었을 때 실행을 하게됨 ((이 컴포넌트가 사라졌을 때))
+==> (언제 쓰냐??)  socket IO 쓰면 혹은 STREAM 
+
+useEffect(() => {
+    //SOCKET IO OPEN
+    console.log('use Effect RAN');
+
+    //Unmount
+    return () => {
+        //SOCKET IO CLOSE
+        console.log('Unmount')
+    }
+
+}, [] )
+
+
+custom Hook 
+
+코드가 길어지면 복잡해지니 
+
