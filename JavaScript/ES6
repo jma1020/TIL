@@ -2,3 +2,14 @@
 --> 이건 js 신문법  ES6 destructuring     var [a,b] = [10,100]
 
 기존에는 하나하나 대입해주었어야 했다 
+
+
+2. arrow (맛보기)
+-->
+이거는 ES6 신문법 화살표 함수 
+기존에 함수 만들고 콜백을 넣을때
+-> addEventListener('click', function() { } ) 
+
+이제 arrow 함수
+-> addEventListener('click', () => { }  )
+똑같은 문법이고 this라는 값만 달라지지 

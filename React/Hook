@@ -84,6 +84,42 @@ state 로 만들어놓은 데이터들은
 그래서 잘생각해서 선택하기
 
 
+코딩애플 유튜브 4강 
+
+이벤트 리스너  
+옛날자바 스크립트면 addEventListener , onClick
+
+쉬운게 onClick 
+리액트에서는 C가 대문자  그리고 중괄호로 적용 onClick={클릭될 떄 실행할 함수 } 
+중괄호안에는 무조건 함수가 하나 딱 들어갈 수 있다.    표현식도 들어가면 안됨 
+
+근데 여기 들어가는 함수가 만들기 귀찮다면  ={ () => { 실행할 내용} }
+
+이거는 ES6 신문법 화살표 함수 
+기존에 함수 만들고 콜백을 넣을때
+-> addEventListener('click', function() { } ) 
+
+이제 arrow 함수
+-> addEventListener('click', () => { } )
+똑같은 문법이고 this라는 값만 달라지지 
+
+클릭시 state 값 변경 예제
+let [ like, setLice ] =useState(0)
+
+onClick={ ()=> { like + 1} }    불가!!
+
+state는 그냥 변경이 안됨!!!
+
+setLike로 항상 다루어주어야함 
+
+그러므로 
+onClick = { () => { setLike( like + 1) } }
+꼭 이벤트안에 넣어야 한다 (상황에 보구)  이렇게 이벤트로 넣어서 변경해야 재렌더링이 이루어짐
+
+그냥 바깥에두면 계속 재렌더링이 이루어질 수 있음
+
+
+
 
 
 
