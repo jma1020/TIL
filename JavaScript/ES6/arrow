@@ -1,8 +1,3 @@
-1. destructuring
---> 이건 js 신문법  ES6 destructuring     var [a,b] = [10,100]
-
-기존에는 하나하나 대입해주었어야 했다 
-
 
 2. arrow (맛보기)
 -->
