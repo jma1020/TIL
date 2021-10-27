@@ -34,4 +34,13 @@ console.log('Today' + weather + '입니다')
 //기존에 이렇게 추가하던걸
 
 console.log(`Today ${weather} 입니다`)
+
+
+//또한
+
+const language = 'javascript'
+
+console.log(`I Love ${language.split('').reverse().join('')})
+
+//결과값 I love tpircsavaj
 ```
