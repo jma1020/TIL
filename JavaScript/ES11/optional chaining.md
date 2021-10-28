@@ -47,3 +47,25 @@ function printManager(person) {
     )
 }
 ```
+
+### 세번째 개선안
+
+And 연산자 사용
+
+```javascript
+function printManager(person) {
+    console.log(person.job && person.job.manager && person.job.manager.name)
+}
+
+//하지만 너무 중복이야
+```
+
+### 네번째 개선안
+
+Optional chaining 
+
+```javascript
+function printManager(person) {
+    console.log(person.job?.manager?.name)
+}
+```
