@@ -1,5 +1,6 @@
 # Nullish coalescing operator (null 병합 연산자)
 
+참고([https://ko.javascript.info/nullish-coalescing-operator],[https://www.daleseo.com/js-nullish-coalescing/])
 
 ```javascript
 const name = 'mini'
