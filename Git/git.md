@@ -16,7 +16,7 @@
 
     cmd 에서
     git clone (git repositories 주소를 입력) (새로 만들 폴더이름)
-
+        
     ->신입 수정 후 
     git add .
 
